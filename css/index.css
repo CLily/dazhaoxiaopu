@@ -38,7 +38,7 @@ header,.submit{
 .merchant-item li label{
 	width: 120px;
 }
-.merchant-item li input,.merchant-item li p{
+.merchant-item li input,.merchant-item li span{
 	flex:1;
 }
 .merchant-item li input{
@@ -90,17 +90,13 @@ header,.submit{
 	transform: scale(0.7,0.7);
 	-webkit-transform: scale(0.7,0.7);
 }
-.merchant-item li p{
+.merchant-item li span{
 	position: relative;
-	top: 0;
-	right: 0;
 }
-.merchant-item li p span,.merchant-item li p img,.merchant-item li p .file-upload{
+.merchant-item li .file-upload{
 	position: absolute;
 	top: 0;
 	left: 0;
-}
-.merchant-item li .file-upload{
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -110,7 +106,7 @@ header,.submit{
 .merchant-item li img{
 	display: none;
 }
-.merchant-item li.selected-img span{
+.merchant-item li.selected-img p{
 	display: none;
 }
 .merchant-item li.selected-img img{
