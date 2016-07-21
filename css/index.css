@@ -36,16 +36,16 @@ header,.submit{
 	color: #494949;
 }
 .merchant-item li label{
-	flex:0 0 120px;
+	width: 120px;
 }
-.merchant-item li input,.merchant-item li span{
-	flex:1;
+.merchant-item li input,.merchant-item li p{
+	flex: 1;
 }
 .merchant-item li input{
 	color: #333;
 	border:none; 
 	line-height: 30px;
-	margin:15px 0;
+	margin-top: 15px;
 	padding:0 10px;
 }
 .merchant-item li i{
@@ -106,7 +106,7 @@ header,.submit{
 .merchant-item li img{
 	display: none;
 }
-.merchant-item li.selected-img p{
+.merchant-item li.selected-img span{
 	display: none;
 }
 .merchant-item li.selected-img img{
