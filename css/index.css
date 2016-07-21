@@ -43,7 +43,8 @@ header,.submit{
 }
 .merchant-item li input{
 	border:none; 
-	line-height: 60px;
+	line-height: 30px;
+	margin:15px 0;
 }
 .merchant-item li i{
 	display: inline-block;
@@ -90,10 +91,13 @@ header,.submit{
 .merchant-item li p{
 	position: relative;
 }
-.merchant-item li .file-upload{
+.merchant-item li p span,.merchant-item li p img,.merchant-item li p .file-upload{
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+.merchant-item li .file-upload{
+	margin: 0;
 	width: 100%;
 	height: 100%;
 	opacity: 0;
