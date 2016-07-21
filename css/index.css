@@ -90,7 +90,7 @@ header,.submit{
 	transform: scale(0.7,0.7);
 	-webkit-transform: scale(0.7,0.7);
 }
-.merchant-item li span{
+.merchant-item li p{
 	position: relative;
 }
 .merchant-item li .file-upload{
