@@ -23,11 +23,8 @@ header,.submit{
 	background-color: #c91622;
 }
 .merchant-item li{
-	display: flex;
-	display: -webkit-flex;
-	display: -moz-flex;
-	flex-direction: row;
 	line-height: 60px;
+	height: 60px;
 	font-size: 14px;
 	padding: 0 20px;
 	background-color: #fff;
@@ -36,13 +33,15 @@ header,.submit{
 }
 .merchant-item li.selected-img{
 	line-height: 90px;
+	height: 90px;
 }
 .merchant-item li label{
 	width: 120px;
+	float: left;
 }
-.merchant-item li input,.merchant-item li p{
-	flex: 1;
-	align-self:center;
+.merchant-item li input{
+	margin-left:120px;
+	width: 100%
 }
 .merchant-item li input{
 	color: #333;
