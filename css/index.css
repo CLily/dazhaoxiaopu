@@ -3,8 +3,12 @@
 	padding: 0;
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
+html,body{
+	height: 100%;
+}
 body{
 	font-family: "微软雅黑";
+	font-size: 20px;
 	background-color: #f5f5f5;
 }
 li{
@@ -13,16 +17,7 @@ li{
 a{
 	text-decoration: none;
 }
-header{
-	line-height: 56px;
-}
-header,.submit{
-	font-size: 20px;
-	text-align: center;
-	color: #fff;
-	background-color: #c91622;
-}
-.merchant-item li{
+.item-box li{
 	line-height: 60px;
 	font-size: 14px;
 	background-color: #fff;
@@ -30,31 +25,111 @@ header,.submit{
 	padding:0 10px;
 	color: #494949;
 }
-.merchant-item li.selected-img{
-	line-height: 90px;
-}
-.merchant-item li label{
-	width: 120px;
+.item-box li label{
+	width: 80px;
 	float: left;
 	position: absolute;
 }
-.merchant-item li input,.merchant-item li p{
+.item-box li input,.item-box li p{
 	box-sizing: border-box;
 	width: 100%;
-	padding:0 10px 0 140px;
+	padding:0 10px 0 100px;
 }
-.merchant-item li input{
+.item-box li input{
 	color: #333;
 	border:none; 
 	line-height: 30px;
-	padding-r
 	margin-top: 15px;
 }
-.merchant-item li i{
+a.submit{
+	display: block;
+	text-align: center;
+	margin: 30px auto;
+	color: #fff;
+	background-color: #c91622;
+	line-height: 40px;
+	width: 70%;
+	border-radius: 20px;
+}
+/* 遮罩层 */
+.mask{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(0,0,0,.2);
+}
+.mask-inner{
+	position: absolute;
+	top: 24%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #fff;
+	width: 60%;
+	height:120px;
+	border-radius: 20px; 
+	color: #c91622;
+	text-align: center;
+}
+.mask-inner img{
+	margin: 16px 0 8px 0;
+	width: 46px;
+	height:46px;
+}
+/* 更换手机号页面 */
+.phone{
+	text-align: right;
+	padding: 0 20px 0 100px;
+}
+/* 绑定手机号页面 */
+.getCode{
+	display: block;
+	width: 96px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	color: #c91622;
+	border:2px solid #c91622;
+	border-radius: 8px;
+	margin-top: 9px;
+	float: right;
+	position: absolute;
+	right: 20px;
+}
+.item-box li.code-item input{
+	padding: 0 110px 0 100px;
+}
+
+
+/* 商户入驻页面 */
+header{
+	line-height: 56px;
+}
+header{
+	text-align: center;
+	color: #fff;
+	background-color: #c91622;
+}
+.item-box.merchant-box li label{
+	width: 120px;
+}
+.item-box.merchant-box li input,.item-box.merchant-box li p{
+	padding:0 10px 0 140px;
+}
+.item-box.merchant-box li p{
+	box-sizing: border-box;
+	width: 100%;
+}
+.item-box li.selected-img{
+	line-height: 90px;
+}
+.item-box li i{
 	display: inline-block;
 	vertical-align: top;
 }
-.merchant-item li label i{
+.item-box li label i{
 	margin-top: 5px;
 	height: 50px;
 	width: 50px;
@@ -63,7 +138,7 @@ header,.submit{
 	transform: scale(0.7,0.7);
 	-webkit-transform: scale(0.7,0.7);
 }
-.merchant-item li.selected-img label i{
+.item-box li.selected-img label i{
 	margin-top:20px;
 }
 .icon-pwd{
@@ -84,7 +159,7 @@ header,.submit{
 .icon-license{
 	background-position: -300px 0;
 }
-.merchant-item li span i{
+.item-box li span i{
 	margin:13px 0 0 30px;
 	height: 33px;
 	width: 38px;
@@ -92,14 +167,14 @@ header,.submit{
 	transform: scale(0.7,0.7);
 	-webkit-transform: scale(0.7,0.7);
 }
-.merchant-item li p{
+.item-box li p{
 	height: 60px;
 	position: relative;
 }
-.merchant-item li.selected-img p{
+.item-box li.selected-img p{
 	height: 90px;
 }
-.merchant-item li .file-upload{
+.item-box li .file-upload{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -109,23 +184,72 @@ header,.submit{
 	height: 100%;
 	opacity: 0;
 }
-.merchant-item li img{
+.item-box li img{
 	display: none;
 }
-.merchant-item li.selected-img span{
+.item-box li.selected-img span{
 	display: none;
 }
-.merchant-item li.selected-img img{
+.item-box li.selected-img img{
 	display: block;
 	width: 120px;
 	height: 60px;
 	margin-left:30px;
 	padding-top:15px;
 }
-a.submit{
-	display: block;
-	margin: 30px auto;
+
+/* 优惠券 */
+.use-btn{
+	font-size: 18px;
+	margin:20px auto;
+	width: 200px;
 	line-height: 40px;
-	width: 60%;
-	border-radius: 20px;
+	color: #949494;
+	background-color: #d1cfcf;
+	border-radius: 8px;
+}
+.use-btn .nouse-btn{
+	border-radius:8px 0 0 8px;
+}
+.use-btn .used-btn{
+	border-radius: 0 8px 8px 0;
+}
+.use-btn span{
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+}
+.use-btn span.active{
+	color: #fff;
+	background-color: #949494;
+}
+.coupon li{
+	margin:20px auto;
+	padding: 10px;
+	height: 60px;
+	width: 282px;
+	background: url(../img/bg-red.png) no-repeat left top;
+	background-size: 292px 74px;
+}
+.coupon li div{
+	border:2px solid #f5d0b9;
+	border-radius: 8px;
+	height: 60px;
+}
+.coupon li img{
+	margin: 4px 10px 4px;
+	width: 79px;
+	height: 46px;
+}
+.coupon li span{
+	display: inline-block;
+	font-size: 16px;
+	color: #fff;
+}
+.coupon li span.info{
+	border-left: 2px solid #f5d0b9;
+	width: 75px;
+}
+.coupon li span.info p{
+	line-height: 30px;
 }

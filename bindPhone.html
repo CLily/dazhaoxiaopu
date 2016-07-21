@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta  name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>绑定手机号</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<ul class="item-box">
+		<li class="item"><label>新手机号:</label><input type="text" /></li>
+		<li class="item code-item">
+			<a class="getCode" href="">获取验证码</a>
+			<label>验证码:</label><input type="text" />
+		</li>
+	</ul>
+	<a class="submit" id="bindSure">确认</a>
+	<div class="mask">
+		<div class="mask-inner">
+			<div><img src="img/gou.png"></div>
+			<p>绑定成功</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		document.getElementById("bindSure").onclick=function(){
+			//判断手机号和验证码
+
+
+			var mask=document.getElementsByClassName("mask")[0];
+			mask.style.display='block';
+			setTimeout(function(){
+				mask.style.display='none';
+				location.href="changePhone.html";
+			},1000)
+		}
+	</script>
+</body>
+</html>
