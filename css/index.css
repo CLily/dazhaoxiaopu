@@ -26,9 +26,9 @@ header,.submit{
 	background-color: #c91622;
 }
 .merchant-item li{
-	display:flex;
-	display: -webkit-flex;
-	display: -moz-flex;
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
 	font-size: 14px;
 	padding: 0 20px;
 	background-color: #fff;
