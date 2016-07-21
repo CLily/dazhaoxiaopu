@@ -201,7 +201,7 @@ header{
 /* 优惠券 */
 .use-btn{
 	font-size: 18px;
-	margin:20px auto;
+	margin:20px auto 30px;
 	width: 200px;
 	line-height: 40px;
 	color: #949494;
@@ -226,30 +226,46 @@ header{
 .coupon li{
 	margin:20px auto;
 	padding: 10px;
-	height: 60px;
-	width: 282px;
+	height: 80px;
+	width: 320px;
 	background: url(../img/bg-red.png) no-repeat left top;
-	background-size: 292px 74px;
+	background-size: 320px 80px;
 }
 .coupon li div{
-	border:2px solid #f5d0b9;
+	font-size: 0;
+	border:1px solid #f5d0b9;
 	border-radius: 8px;
 	height: 60px;
+	width: 300px;
 }
-.coupon li img{
-	margin: 4px 10px 4px;
-	width: 79px;
-	height: 46px;
-}
+.coupon li img,
 .coupon li span{
 	display: inline-block;
+	vertical-align: top;
 	font-size: 16px;
 	color: #fff;
 }
+.coupon li img{
+	margin: 10px;
+	width: 80px;
+	height: 40px;
+}
 .coupon li span.info{
-	border-left: 2px solid #f5d0b9;
-	width: 75px;
+	width: 66px;
+	padding:0 12px;
+	border-left: 1px solid #f5d0b9;
+	line-height: 26px;
 }
 .coupon li span.info p{
-	line-height: 30px;
+	font-size: 22px;
+	font-weight: bold;
+}
+.coupon li span.info p{
+	line-height: 34px;
+}
+.coupon li span.det{
+	width: 99px;
+	margin:10px 0;
+	line-height: 20px;
+	padding-right: 10px;
 }
