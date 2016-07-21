@@ -14,7 +14,7 @@ a{
 	text-decoration: none;
 }
 header,.merchant-item li,.submit{
-	line-height: 40px;
+	line-height: 60px;
 }
 header,.submit{
 	font-size: 22px;
@@ -40,7 +40,7 @@ header,.submit{
 }
 .merchant-item li input{
 	border:none; 
-	line-height: 40px;
+	line-height: 60px;
 }
 .merchant-item li i{
 	display: inline-block;
