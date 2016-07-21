@@ -13,11 +13,8 @@ li{
 a{
 	text-decoration: none;
 }
-header,.merchant-item li{
-	line-height: 60px;
-}
-.merchant-item li.selected-img{
-	line-height: 90px;
+header{
+	line-height: 56px;
 }
 header,.submit{
 	font-size: 20px;
@@ -29,11 +26,16 @@ header,.submit{
 	display: flex;
 	display: -webkit-flex;
 	display: -moz-flex;
+	flex-direction: row;
+	line-height: 60px;
 	font-size: 14px;
 	padding: 0 20px;
 	background-color: #fff;
 	margin-top:2px;
 	color: #494949;
+}
+.merchant-item li.selected-img{
+	line-height: 90px;
 }
 .merchant-item li label{
 	width: 120px;
@@ -93,6 +95,10 @@ header,.submit{
 }
 .merchant-item li p{
 	position: relative;
+	height: 60px;
+}
+.merchant-item li.selected-img p{
+	height: 90px;
 }
 .merchant-item li .file-upload{
 	position: absolute;
