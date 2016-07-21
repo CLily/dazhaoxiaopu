@@ -79,7 +79,7 @@ header,.submit{
 	background-position: -300px 0;
 }
 .merchant-item li span i{
-	margin:13px 6px 0 40px;
+	margin:13px 0 0 30px;
 	height: 33px;
 	width: 38px;
 	background:url(../img/file.png) no-repeat left top;
@@ -106,7 +106,7 @@ header,.submit{
 	display: block;
 	width: 120px;
 	height: 60px;
-	margin:15px 0 0 20px;
+	margin:15px 0 0 30px;
 }
 a.submit{
 	display: block;
