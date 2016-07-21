@@ -24,31 +24,31 @@ header,.submit{
 }
 .merchant-item li{
 	line-height: 60px;
-	height: 60px;
 	font-size: 14px;
-	padding: 0 20px;
 	background-color: #fff;
 	margin-top:2px;
+	padding:0 10px;
 	color: #494949;
 }
 .merchant-item li.selected-img{
 	line-height: 90px;
-	height: 90px;
 }
 .merchant-item li label{
 	width: 120px;
 	float: left;
+	position: absolute;
 }
-.merchant-item li input{
-	margin-left:120px;
-	width: 100%
+.merchant-item li input,.merchant-item li p{
+	box-sizing: border-box;
+	width: 100%;
+	padding:0 10px 0 140px;
 }
 .merchant-item li input{
 	color: #333;
 	border:none; 
 	line-height: 30px;
+	padding-r
 	margin-top: 15px;
-	padding:0 10px;
 }
 .merchant-item li i{
 	display: inline-block;
@@ -94,6 +94,7 @@ header,.submit{
 }
 .merchant-item li p{
 	height: 60px;
+	position: relative;
 }
 .merchant-item li.selected-img p{
 	height: 90px;
@@ -118,7 +119,8 @@ header,.submit{
 	display: block;
 	width: 120px;
 	height: 60px;
-	margin:15px 0 0 30px;
+	margin-left:30px;
+	padding-top:15px;
 }
 a.submit{
 	display: block;
