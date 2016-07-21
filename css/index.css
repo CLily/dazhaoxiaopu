@@ -94,7 +94,6 @@ header,.submit{
 	-webkit-transform: scale(0.7,0.7);
 }
 .merchant-item li p{
-	position: relative;
 	height: 60px;
 }
 .merchant-item li.selected-img p{
