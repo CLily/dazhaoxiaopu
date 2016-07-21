@@ -42,6 +42,7 @@ header,.submit{
 	flex:1;
 }
 .merchant-item li input{
+	color: #333;
 	border:none; 
 	line-height: 30px;
 	margin:15px 0;
@@ -91,6 +92,8 @@ header,.submit{
 }
 .merchant-item li p{
 	position: relative;
+	top: 0;
+	right: 0;
 }
 .merchant-item li p span,.merchant-item li p img,.merchant-item li p .file-upload{
 	position: absolute;
