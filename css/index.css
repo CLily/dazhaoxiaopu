@@ -45,6 +45,7 @@ header,.submit{
 	border:none; 
 	line-height: 30px;
 	margin:15px 0;
+	padding:0 10px;
 }
 .merchant-item li i{
 	display: inline-block;
@@ -98,6 +99,7 @@ header,.submit{
 }
 .merchant-item li .file-upload{
 	margin: 0;
+	padding: 0;
 	width: 100%;
 	height: 100%;
 	opacity: 0;
