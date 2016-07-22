@@ -200,7 +200,7 @@ header{
 .shop li{
 	margin: 20px 0;
 	padding:10px 10px;
-	height: 114px;
+	height: 110px;
 	border-top: 1px solid #e3e3e3;
 	background-color: #fff;
 }
@@ -208,7 +208,7 @@ header{
 	float: left;
 	width: 100px;
 	height: 100px;
-	margin-top: 7px;
+	margin-top: 5px;
 	border-radius: 6px;
 }
 .shop li .info{
