@@ -319,7 +319,6 @@ header{
 }
 .coupon li img,
 .coupon li span{
-	-webkit-text-size-adjust:none;
 	display: inline-block;
 	vertical-align: top;
 	font-size: 16px;
@@ -344,7 +343,7 @@ header{
 	line-height: 34px;
 }
 .coupon li span.det{
-	width: 97px;
+	width: 93px;
 	margin:10px 0;
 	line-height: 20px;
 	padding-right: 10px;
