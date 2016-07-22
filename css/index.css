@@ -319,6 +319,7 @@ header{
 }
 .coupon li img,
 .coupon li span{
+	-webkit-text-size-adjust:none;
 	display: inline-block;
 	vertical-align: top;
 	font-size: 16px;
