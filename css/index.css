@@ -315,7 +315,7 @@ header{
 	border:1px solid #f5d0b9;
 	border-radius: 8px;
 	height: 60px;
-	width: 300px;
+	width: 298px;
 }
 .coupon li img,
 .coupon li span{
@@ -343,7 +343,7 @@ header{
 	line-height: 34px;
 }
 .coupon li span.det{
-	width: 99px;
+	width: 97px;
 	margin:10px 0;
 	line-height: 20px;
 	padding-right: 10px;
