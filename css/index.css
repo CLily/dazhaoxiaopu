@@ -359,7 +359,7 @@ header{
 }
 /* 优惠券详情页 */
 .card{
-	margin: 40px auto;
+	margin: 40px auto 40px;
 	width: 320px;
 	position: relative;
 }
