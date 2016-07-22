@@ -359,9 +359,17 @@ header{
 }
 /* 优惠券详情页 */
 .card{
-	margin: 40px 0;
+	margin: 40px auto;
 	filter: drop-shadow(5px 5px 27px rgba(0,0,0,.3));
 	-webkit-filter: drop-shadow(5px 5px 27px rgba(0,0,0,.3));
+}
+.card:before{
+	content: "";
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.2);
+	box-shadow: 5px 5px 27px rgba(0,0,0,.2);
 }
 .card-up,.card-down{
 	margin: 0 auto;
