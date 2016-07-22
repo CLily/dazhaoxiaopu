@@ -199,29 +199,35 @@ header{
 /* 店铺 */
 .shop li{
 	margin: 20px 0;
-	padding:0 8px;
-	height: 120px;
+	padding:10px 10px;
+	height: 114px;
 	border-top: 1px solid #e3e3e3;
 	background-color: #fff;
 }
 .shop li img{
 	float: left;
-	width: 120px;
-	height: 60px;
-	margin: 30px 10px 0 0;
+	width: 100px;
+	height: 100px;
+	margin-top: 7px;
 	border-radius: 6px;
 }
 .shop li .info{
 	box-sizing: border-box;
 	width: 100%;
-	padding-left: 130px;
-	line-height: 24px;
+	padding-left: 110px;
 	font-size: 14px;
 	color: #8a8a8a;
 }
+.shop li .info h4,.shop li .info p{
+	width: 100%;
+	height: 22px;
+	line-height: 22px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
 .shop li .info h4{
 	font-size: 18px;
-	margin:5px 0 0;
 	color: #131313;
 }
 .shop li .info .star{
@@ -248,7 +254,7 @@ header{
 .shop li .info i.quan{
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 6px;
+	margin-right: 4px;
 	width: 22px;
 	height: 22px;
 	background: url(../img/quan.png) no-repeat top left;
@@ -438,6 +444,9 @@ header{
 }
 @media screen and (max-width : 320px){
 	.card{
-		transform: scale(0.8,0.8);
+		transform: scale(0.9);
+	}
+	.coupon li{
+		transform: scale(0.9);
 	}
 }
