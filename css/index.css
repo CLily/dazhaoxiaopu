@@ -359,7 +359,7 @@ header{
 }
 /* 优惠券详情页 */
 .card{
-	margin: 40px auto 40px;
+	margin: 40px auto;
 	width: 320px;
 	position: relative;
 }
@@ -408,6 +408,7 @@ header{
 }
 .card-down{
 	height: 280px;
+	margin-bottom: 40px;
 	transform: translateX(6px);
 	-webkit-transform: translateX(6px);
 	font-size: 14px;
