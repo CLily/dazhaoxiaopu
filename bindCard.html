@@ -11,24 +11,23 @@
 		<li class="item"><label>联名卡:</label><input type="text" /></li>
 		<li class="item"><label>联名卡卡号:</label><input type="text" placeholder="请输入有效的联名卡卡号" /></li>
 	</ul>
-	<a class="submit" id="bindSure">确认</a>
+	<a class="submit">确认</a>
 	<div class="mask">
 		<div class="mask-inner">
 			<div><img src="img/gou.png"></div>
 			<p>绑定成功</p>
 		</div>
 	</div>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
 	<script type="text/javascript">
-		document.getElementById("bindSure").onclick=function(){
-			//判断卡号是否正确
+		$(".submit").on('click',function(){
+			//判断手机号和验证码
 
-
-			var mask=document.getElementsByClassName("mask")[0];
-			mask.style.display='block';
+			$(".mask").show();
 			setTimeout(function(){
-				mask.style.display='none';
+				$(".mask").hide();
 			},1000)
-		}
+		})
 	</script>
 </body>
 </html>

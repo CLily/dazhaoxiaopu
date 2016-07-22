@@ -8,10 +8,10 @@ html,body{
 }
 body{
 	font-family: "微软雅黑";
-	font-size: 20px;
+	font-size: 16px;
 	background-color: #f5f5f5;
 }
-li{
+ul{
 	list-style: none;
 }
 a{
@@ -102,12 +102,10 @@ a.submit{
 	padding: 0 110px 0 100px;
 }
 
-
 /* 商户入驻页面 */
 header{
+	font-size: 20px;
 	line-height: 56px;
-}
-header{
 	text-align: center;
 	color: #fff;
 	background-color: #c91622;
@@ -198,15 +196,76 @@ header{
 	padding-top:15px;
 }
 
+/* 店铺 */
+.shop li{
+	margin: 20px 0;
+	padding:0 8px;
+	height: 120px;
+	border-top: 1px solid #e3e3e3;
+	background-color: #fff;
+}
+.shop li img{
+	float: left;
+	width: 120px;
+	height: 60px;
+	margin: 30px 10px 0 0;
+	border-radius: 6px;
+}
+.shop li .info{
+	box-sizing: border-box;
+	width: 100%;
+	padding-left: 130px;
+	line-height: 24px;
+	font-size: 14px;
+	color: #8a8a8a;
+}
+.shop li .info h4{
+	font-size: 18px;
+	margin:5px 0 0;
+	color: #131313;
+}
+.shop li .info .star{
+	font-size: 12px;
+	line-height: 18px;
+	color: #ffba00;
+}
+.shop li .info .star i{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../img/star.png) no-repeat top left;
+}
+.shop li .info .star i.star1{background-position:-12px 0}
+.shop li .info .star i.star2{background-position:-24px 0}
+.shop li .info .star i.star3{background-position:-36px 0}
+.shop li .info .star i.star4{background-position:-48px 0}
+.shop li .info .star i.star5{background-position:-60px 0}
+.shop li .info .star i.star6{background-position:-72px 0}
+.shop li .info .star i.star7{background-position:-84px 0}
+.shop li .info .star i.star8{background-position:-96px 0}
+.shop li .info .star i.star9{background-position:-108px 0}
+.shop li .info .star i.star10{background-position:-120px 0}
+.shop li .info i.quan{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 6px;
+	width: 22px;
+	height: 22px;
+	background: url(../img/quan.png) no-repeat top left;
+}
+.shop li .info i.add{
+	display: inline-block;
+	vertical-align: top;
+	margin: 4px 2px 0 8px;
+	width: 12px;
+	height: 15px;
+	background: url(../img/add.png) no-repeat top left;
+}
 /* 优惠券 */
 .use-btn{
-	font-size: 18px;
-	margin:20px auto 30px;
+	font-size: 0px;
 	width: 200px;
-	line-height: 40px;
-	color: #949494;
-	background-color: #d1cfcf;
-	border-radius: 8px;
+	margin:20px auto 30px;
 }
 .use-btn .nouse-btn{
 	border-radius:8px 0 0 8px;
@@ -215,9 +274,14 @@ header{
 	border-radius: 0 8px 8px 0;
 }
 .use-btn span{
+	cursor: pointer;
+	font-size: 18px;
 	display: inline-block;
 	width: 100px;
+	background-color: #d1cfcf;
+	color: #949494;
 	text-align: center;
+	line-height: 40px;
 }
 .use-btn span.active{
 	color: #fff;
@@ -268,4 +332,112 @@ header{
 	margin:10px 0;
 	line-height: 20px;
 	padding-right: 10px;
+}
+.coupon.hasused{
+	display: none;
+}
+.coupon.hasused li.ysy{
+	background-image: url(../img/bg-ysy.png);
+}
+.coupon.hasused li.ygq{
+	background-image: url(../img/bg-ygq.png);
+}
+/* 优惠券详情页 */
+.card{
+	margin: 40px 0;
+	filter: drop-shadow(5px 5px 27px rgba(0,0,0,.3));
+	-webkit-filter: drop-shadow(5px 5px 27px rgba(0,0,0,.3));
+}
+.card-up,.card-down{
+	margin: 0 auto;
+	width: 300px;
+	height: 240px;
+	position: relative;
+}
+.card-up:before{
+	content: "";
+	display: block;
+	height: 0;
+	width: 300px;
+	border-width: 240px 12px 0 12px;
+	border-style: solid solid none;
+    border-color: #fff transparent transparent ;
+    transform: translateX(-6px);
+    position: absolute;
+    z-index: -1;
+}
+.card-down:before{
+	content: "";
+	display: block;
+	height: 0;
+	width: 300px;
+	border-width: 0 12px 300px 12px;
+	border-style: none solid solid;
+    border-color: transparent transparent #fff;
+    position: absolute;
+    transform: translateX(-12px);
+    z-index: -1;
+}
+.card-down{
+	height: 300px;
+	transform: translateX(6px);
+	font-size: 14px;
+	color: #5f5f5f;
+	line-height: 20px;
+	box-sizing: border-box;
+	border-top: 2px solid #d0cece;
+}
+.card-up .pic,.card-up p,.card-up .buy{
+	text-align: center; 
+	color:#484848;
+}
+.card-up .pic img{
+	margin-top: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.card-up .name{
+	font-size:14px;
+	line-height:20px;
+}
+.card-up .money{
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 40px;
+}
+.card-up .info{
+	line-height: 30px;
+}
+.card-up .buy{
+	margin: 10px auto 0;
+	display: block;
+	color: #fff;
+	background-color: #c91622;
+	width: 200px;
+	line-height: 36px;
+	border-radius:8px;
+}
+.card-down .date,.card-down .time,.card-down .des{
+	margin:10px;
+}
+.card-down .date{
+	margin-top: 20px;
+}
+.card-down label{
+	float: left;
+}
+.card-down .date p{
+	padding-left: 58px;
+}
+.card-down .time p{
+	padding-left: 60px;
+}
+.card-down .des ol{
+	padding-left: 84px;
+}
+@media screen and (max-width : 320px){
+	.card{
+		transform: scale(0.8,0.8);
+	}
 }

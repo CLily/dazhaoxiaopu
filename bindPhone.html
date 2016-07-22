@@ -21,18 +21,17 @@
 			<p>绑定成功</p>
 		</div>
 	</div>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
 	<script type="text/javascript">
-		document.getElementById("bindSure").onclick=function(){
+		$(".submit").on('click',function(){
 			//判断手机号和验证码
 
-
-			var mask=document.getElementsByClassName("mask")[0];
-			mask.style.display='block';
+			$(".mask").show();
 			setTimeout(function(){
-				mask.style.display='none';
+				$(".mask").hide();
 				location.href="changePhone.html";
 			},1000)
-		}
+		})
 	</script>
 </body>
 </html>

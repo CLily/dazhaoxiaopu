@@ -8,32 +8,37 @@
 </head>
 <body>
 	<p class="use-btn">
-		<span class="nouse-btn active">未使用</span><span class="used-btn">已使用</span>
+		<span class="nouse-btn active">未使用</span>
+		<span class="used-btn">已使用</span>
 	</p>
 	<ul class="coupon noUsed">
 		<li>
-			<div>
-				<img src="img/pic.png">
-				<span class="info">
-					<p>20元</p>
-					<span>照相本子</span>
-				</span>
-				<span class="det">代金券满168可用</span>		
-			</div>
+			<a href="couponsDetail.html">
+				<div>
+					<img src="img/pic.png">
+					<span class="info">
+						<p>20元</p>
+						<span>照相本子</span>
+					</span>
+					<span class="det">代金券满168可用</span>		
+				</div>
+			</a>
 		</li>
 		<li>
-			<div>
-				<img src="img/pic.png">
-				<span class="info">
-					<p>20元</p>
-					<span>照相本子</span>
-				</span>
-				<span class="det">代金券满168可用</span>		
-			</div>
+			<a href="couponsDetail.html">
+				<div>
+					<img src="img/pic.png">
+					<span class="info">
+						<p>20元</p>
+						<span>照相本子</span>
+					</span>
+					<span class="det">代金券满168可用</span>		
+				</div>
+			</a>
 		</li>
 	</ul>
 	<ul class="coupon hasused">
-		<li>
+		<li class="ysy">
 			<div>
 				<img src="img/pic.png">
 				<span class="info">
@@ -43,7 +48,7 @@
 				<span class="det">代金券满168可用</span>		
 			</div>
 		</li>
-		<li>
+		<li class="ygq">
 			<div>
 				<img src="img/pic.png">
 				<span class="info">
@@ -54,5 +59,18 @@
 			</div>
 		</li>
 	</ul>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript">
+		$(".use-btn .nouse-btn").on('click',function(){
+			$(this).addClass("active").siblings().removeClass("active");
+			$(".coupon.noUsed").show();
+			$(".coupon.hasused").hide();
+		})
+		$(".use-btn .used-btn").on('click',function(){
+			$(this).addClass("active").siblings().removeClass("active");
+			$(".coupon.noUsed").hide();
+			$(".coupon.hasused").show();
+		})
+	</script>
 </body>
 </html>
