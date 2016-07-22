@@ -53,7 +53,7 @@ a.submit{
 }
 /* 遮罩层 */
 .mask{
-	display: none;
+	/* display: none; */
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -77,6 +77,13 @@ a.submit{
 	margin: 16px 0 8px 0;
 	width: 46px;
 	height:46px;
+}
+/* 绑定联名卡 */
+.item-box li.item-card label{
+	width: 60px;
+}
+.item-box li.item-card input{
+	padding-left: 60px;
 }
 /* 更换手机号页面 */
 .phone{
