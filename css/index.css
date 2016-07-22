@@ -360,16 +360,21 @@ header{
 /* 优惠券详情页 */
 .card{
 	margin: 40px auto;
-	filter: drop-shadow(5px 5px 27px rgba(0,0,0,.3));
-	-webkit-filter: drop-shadow(5px 5px 27px rgba(0,0,0,.3));
+	width: 320px;
+	position: relative;
+	/* filter: drop-shadow(5px 5px 27px rgba(0,0,0,.3));
+	-webkit-filter: drop-shadow(5px 5px 27px rgba(0,0,0,.3)); */
 }
 .card:before{
 	content: "";
 	display: block;
-	height: 100%;
-	width: 100%;
-	background-color: rgba(0,0,0,.2);
-	box-shadow: 5px 5px 27px rgba(0,0,0,.2);
+	height: 540px;
+	width: 300px;
+	position: absolute;
+	z-index: -1;
+	left: 15px;
+	background-color: transparent;
+	box-shadow: 5px 5px 40px rgba(0,0,0,.4);
 }
 .card-up,.card-down{
 	margin: 0 auto;
