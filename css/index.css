@@ -291,7 +291,7 @@ header{
 	cursor: pointer;
 	font-size: 18px;
 	display: inline-block;
-	width: 50%;
+	width: 48%;
 	background-color: #d1cfcf;
 	color: #949494;
 	text-align: center;
@@ -302,6 +302,7 @@ header{
 	background-color: #949494;
 }
 .coupon li{
+	box-sizing: border-box;
 	margin:20px auto;
 	padding: 10px;
 	height: 80px;
